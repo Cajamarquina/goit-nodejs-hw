@@ -82,7 +82,7 @@ export const avatarUploadSchema = Joi.object({
   .unknown(true)
   .required();
 
-export const userEmailShema = Joi.object({
+export const userEmailSchema = Joi.object({
   email: Joi.string().pattern(emailRegex).required(),
 });
 const User = model("user", userSchema);
